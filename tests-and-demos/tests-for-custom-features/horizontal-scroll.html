@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Horizontal Scrollbar with Images</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        display: flex;
+        /* justify-content: center; */
+        align-items: center;
+        height: 100vh;
+        background-color: #f0f0f0;
+      }
+
+      .scroll-container {
+        display: flex;
+        overflow-x: auto;
+        padding: 20px;
+        background: white;
+        border: 1px solid #ccc;
+        width: 100%;
+      }
+
+      .scroll-container img {
+        flex: 0 0 auto;
+        /* width: 150px; */
+        /* height: 150px; */
+        margin-right: 10px;
+        object-fit: cover;
+        border-radius: 8px;
+      }
+
+      .scroll-container img:last-child {
+        margin-right: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="scroll-container">
+      <img src="https://via.placeholder.com/300" alt="Image 1" />
+      <img src="https://via.placeholder.com/300" alt="Image 2" />
+      <img src="https://via.placeholder.com/300" alt="Image 3" />
+      <img src="https://via.placeholder.com/300" alt="Image 4" />
+      <img src="https://via.placeholder.com/300" alt="Image 5" />
+      <img src="https://via.placeholder.com/300" alt="Image 6" />
+      <img src="https://via.placeholder.com/300" alt="Image 7" />
+      <img src="https://via.placeholder.com/300" alt="Image 8" />
+      <img src="https://via.placeholder.com/300" alt="Image 8" />
+    </div>
+  </body>
+</html>

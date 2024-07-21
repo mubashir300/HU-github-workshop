@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Input Examples</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+        h1 {
+            text-align: center;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0;
+            box-sizing: border-box;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>User Input Examples</h1>
+        <form>
+            <!-- Text Input -->
+            <div class="form-group">
+                <label for="text">Text Input:</label>
+                <input type="text" id="text" name="text" placeholder="Enter text here">
+            </div>
+
+            <!-- Password Input -->
+            <div class="form-group">
+                <label for="password">Password Input:</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password">
+            </div>
+
+            <!-- Email Input -->
+            <div class="form-group">
+                <label for="email">Email Input:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email">
+            </div>
+
+            <!-- Number Input -->
+            <div class="form-group">
+                <label for="number">Number Input:</label>
+                <input type="number" id="number" name="number" placeholder="Enter a number">
+            </div>
+
+            <!-- Telephone Input -->
+            <div class="form-group">
+                <label for="tel">Telephone Input:</label>
+                <input type="tel" id="tel" name="tel" placeholder="Enter your phone number">
+            </div>
+
+            <!-- URL Input -->
+            <div class="form-group">
+                <label for="url">URL Input:</label>
+                <input type="url" id="url" name="url" placeholder="Enter a URL">
+            </div>
+
+            <!-- Date Input -->
+            <div class="form-group">
+                <label for="date">Date Input:</label>
+                <input type="date" id="date" name="date">
+            </div>
+
+            <!-- Time Input -->
+            <div class="form-group">
+                <label for="time">Time Input:</label>
+                <input type="time" id="time" name="time">
+            </div>
+
+            <!-- Color Input -->
+            <div class="form-group">
+                <label for="color">Color Input:</label>
+                <input type="color" id="color" name="color">
+            </div>
+
+            <!-- File Input -->
+            <div class="form-group">
+                <label for="file">File Input:</label>
+                <input type="file" id="file" name="file">
+                <label for="checkbox1">Option 1</label><br>
+                <input type="checkbox" id="checkbox2" name="checkbox2" value="Option 2">
+            </div>
+
+            <!-- Range Input -->
+            <div class="form-group">
+                <label for="range">Range Input:</label>
+                <input type="range" id="range" name="range" min="0" max="100">
+            </div>
+
+            <!-- Checkbox -->
+            <div class="form-group">
+                <label>Checkbox Input:</label>
+                <input type="checkbox" id="checkbox1" name="checkbox1" value="Option 1">
+                <label for="checkbox2">Option 2</label>
+            </div>
+
+            <!-- Radio Buttons -->
+            <div class="form-group">
+                <label>Radio Button Input:</label>
+                <input type="radio" id="radio1" name="radio" value="Option 1">
+                <label for="radio1">Option 1</label><br>
+                <input type="radio" id="radio2" name="radio" value="Option 2">
+                <label for="radio2">Option 2</label>
+            </div>
+
+            <!-- Select Dropdown -->
+            <div class="form-group">
+                <label for="select">Select Dropdown:</label>
+                <select id="select" name="select">
+                    <option value="Option 1">Option 1</option>
+                    <option value="Option 2">Option 2</option>
+                    <option value="Option 3">Option 3</option>
+                </select>
+            </div>
+
+            <!-- Textarea -->
+            <div class="form-group">
+                <label for="textarea">Textarea:</label>
+                <textarea id="textarea" name="textarea" rows="4" placeholder="Enter your message here"></textarea>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="form-group">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
