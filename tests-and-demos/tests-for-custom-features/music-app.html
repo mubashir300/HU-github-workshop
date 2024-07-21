@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Artists</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+      }
+
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #333;
+        color: white;
+        padding: 10px 20px;
+      }
+
+      .logo {
+        flex-grow: 1;
+        text-align: center;
+      }
+
+      .logo img {
+        width: 100%;
+        max-width: 200px;
+      }
+
+      .hamburger {
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 20px;
+      }
+
+      .hamburger div {
+        width: 25px;
+        height: 3px;
+        background-color: white;
+      }
+
+      .search-container {
+        position: relative;
+      }
+
+      .search-container input {
+        width: 0;
+        padding: 5px;
+        font-size: 16px;
+        transition: width 0.3s ease-in-out;
+        border: none;
+        outline: none;
+      }
+
+      .search-container button {
+        background: none;
+        border: none;
+        color: white;
+        cursor: pointer;
+      }
+
+      .search-container button:focus + input,
+      .search-container input:focus,
+      .search-container input:active {
+        width: 200px;
+      }
+
+      .content {
+        padding: 20px;
+        border-radius: 10px;
+        background-color: wheat;
+        margin: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .music-list {
+        list-style: none;
+        padding: 0;
+      }
+
+      .music-list li {
+        margin: 10px 0;
+        background-color: antiquewhite;
+        padding: 10px;
+        border-radius: 10px;
+      }
+
+      .music-list a {
+        text-decoration: none;
+        color: #333;
+        font-size: 18px;
+      }
+
+      .music-list a:hover {
+        color: #007bff;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="hamburger">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div class="logo">
+        <img src="https://via.placeholder.com/200x50" alt="Logo" />
+      </div>
+      <div class="search-container">
+        <button>&#128269;</button>
+        <input type="text" placeholder="Search..." />
+      </div>
+    </header>
+    <div class="content">
+      <ul class="music-list">
+        <li><a href="#">Artist 1</a></li>
+        <li><a href="#">Artist 2</a></li>
+        <li><a href="#">Artist 3</a></li>
+        <li><a href="#">Artist 4</a></li>
+        <li><a href="#">Artist 5</a></li>
+        <li><a href="#">Artist 6</a></li>
+      </ul>
+    </div>
+  </body>
+</html>

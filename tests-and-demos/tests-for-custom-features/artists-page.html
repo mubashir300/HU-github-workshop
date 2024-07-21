@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Artist Page</title>
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.6.12/plyr.css" />
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+      }
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #333;
+        color: white;
+        padding: 10px 20px;
+        width: 100%;
+      }
+      .logo {
+        flex-grow: 1;
+        text-align: center;
+      }
+      .logo img {
+        width: 100%;
+        max-width: 200px;
+      }
+      .content {
+        width: 100%;
+        max-width: 800px;
+        background: white;
+        padding: 20px;
+        border: 1px solid #ccc;
+        margin-top: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      .profile-container {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+      }
+      .profile-details {
+        flex-grow: 1;
+      }
+      .profile-picture img {
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        border-radius: 50%;
+      }
+      .music-player {
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="https://via.placeholder.com/200x50" alt="Logo" />
+      </div>
+    </header>
+    <div class="content">
+      <div class="profile-container">
+        <div class="profile-picture">
+          <img
+            src="https://cdn2.thecatapi.com/images/3ce.jpg"
+            alt="artist-profile-picture"
+          />
+        </div>
+        <div class="profile-details">
+          <h1>Artist Name</h1>
+          <p>Some information about the artist.</p>
+        </div>
+      </div>
+      <div class="music-player">
+        <audio id="player" controls>
+          <source src="path/to/your/music/file.mp3" type="audio/mp3" />
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+    </div>
+    <script src="https://cdn.plyr.io/3.6.12/plyr.polyfilled.js"></script>
+    <script>
+      const player = new Plyr("#player");
+    </script>
+  </body>
+</html>
