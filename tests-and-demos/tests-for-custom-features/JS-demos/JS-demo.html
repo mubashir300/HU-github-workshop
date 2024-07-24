@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Toggle Text Demo</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+      }
+      button {
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>JavaScript Toggle Text Demo</h1>
+
+    <p id="text">This is the original text.</p>
+    <p id="">Another piece of text.</p>
+    <button onclick="toggleText()">Toggle Text</button>
+
+    <script>
+      function toggleText() {
+        let paragraph = document.getElementById("text");
+        // if (paragraph.innerHTML === "This is the original text.") {
+        paragraph.innerHTML = "The text has been changed!";
+        // } else {
+        //   paragraph.innerHTML = "This is the original text.";
+        // }
+      }
+    </script>
+  </body>
+</html>

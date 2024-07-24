@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Page with Header and Footer</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+
+      header {
+        background-color: #333;
+        color: white;
+        padding: 10px 20px;
+        display: flex;
+        justify-content: space-between;
+        /* justify-content: flex-end; */
+        /* justify-content: flex-start; */
+        /* justify-content: space-evenly; */
+        align-items: center;
+      }
+
+      .logo img {
+        width: 100px;
+      }
+
+      nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+      }
+
+      nav ul li {
+        margin: 0 15px;
+      }
+
+      nav ul li a {
+        color: white;
+        text-decoration: none;
+      }
+
+      nav ul li a:hover {
+        text-decoration: underline;
+      }
+
+      .content {
+        flex-grow: 1;
+        padding: 20px;
+      }
+
+      footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 10px 20px;
+        position: relative;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="https://via.placeholder.com/100x50" alt="Logo" />
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="content">
+      <h1>Welcome to Our Website</h1>
+      <p>
+        This is a simple page demonstrating the use of headers and footers. You
+        can add more content here as needed. The header contains a logo and
+        navigation links, while the footer contains some basic information.
+      </p>
+    </div>
+    <footer>
+      <p>&copy; 2024 Your Company. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

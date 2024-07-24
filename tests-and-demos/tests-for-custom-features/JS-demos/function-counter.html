@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Number Counter</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+        text-align: center;
+      }
+      #counter {
+        font-size: 2em;
+        margin: 20px;
+      }
+      button {
+        margin: 10px;
+        padding: 10px 20px;
+        font-size: 1em;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Simple Number Counter</h1>
+
+    <div id="counter">0</div>
+
+    <button onclick="increment()">Increment</button>
+    <button onclick="decrement()">Decrement</button>
+    <button onclick="resetCounter()">Reset</button>
+
+    <script>
+      let count = 0;
+
+      function updateCounter() {
+        document.getElementById("counter").innerText = count;
+      }
+
+      function increment() {
+        count++;
+        updateCounter();
+      }
+
+      function decrement() {
+        count--;
+        updateCounter();
+      }
+
+      function resetCounter() {
+        count = 0;
+        updateCounter();
+      }
+    </script>
+  </body>
+</html>
