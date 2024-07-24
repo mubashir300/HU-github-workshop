@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+
+      h1 {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      .container {
+        padding: 20px;
+        background-color: lightgray;
+      }
+
+      .box {
+        background-color: blue;
+        color: white;
+        padding: 20px;
+        margin: 10px 0;
+      }
+
+      .box span {
+        background-color: red;
+        color: white;
+        padding: 10px;
+        margin: 5px;
+        display: inline-block;
+      }
+
+      /* Styles for screens larger than 600px */
+      @media (min-width: 600px) {
+        .container {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+        }
+
+        .box {
+          flex: 1 1 45%;
+          margin: 10px;
+        }
+      }
+
+      /* Styles for screens larger than 900px */
+      @media (min-width: 900px) {
+        .box {
+          flex: 1 1 30%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Responsive Layout Demo</h1>
+
+    <div class="container">
+      <div class="box">
+        <span>Text 1</span>
+        <span>Text 2</span>
+        <span>Text 3</span>
+      </div>
+      <div class="box">
+        <span>Text 1</span>
+        <span>Text 2</span>
+        <span>Text 3</span>
+      </div>
+      <div class="box">
+        <span>Text 1</span>
+        <span>Text 2</span>
+        <span>Text 3</span>
+      </div>
+      <div class="box">
+        <span>Text 1</span>
+        <span>Text 2</span>
+        <span>Text 3</span>
+      </div>
+    </div>
+  </body>
+</html>
