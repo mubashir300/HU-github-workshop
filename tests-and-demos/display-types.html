@@ -1,72 +1,118 @@
 <!DOCTYPE html>
 <html>
-<head>
-<style>
-p {
-  background-color: blue;
-  padding: 10px;
-}
+  <head>
+    <style>
+      p {
+        background-color: blue;
+        color: white;
+        padding: 10px;
+        margin-bottom: 20px;
+      }
 
-span {
-  background-color: red;
-  color: white;
-  padding: 10px;
-}
+      span {
+        background-color: red;
+        color: white;
+        padding: 10px;
+        margin: 5px;
+      }
 
-p.ex1 {display: none;}
-p.ex2 {display: inline;}
-p.ex3 {display: block;}
-p.ex4 {display: inline-block;}
-p.ex5 {display: flex;}
-p.ex6 {display: grid;}
-</style>
-</head>
-<body>
-<h1>The display Property</h1>
+      p.ex1 {
+        display: none;
+      }
+      p.ex2 {
+        display: inline;
+      }
+      p.ex3 {
+        display: block;
+      }
+      p.ex4 {
+        display: inline-block;
+      }
+      p.ex5 {
+        display: flex;
+      }
+      p.ex6 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>The display Property</h1>
 
-<h2>display: none:</h2>
-<p class="ex1">
-  <span>Text 1</span>
-  <span>Text 2</span>
-  <span>Text 3</span>
-</p>
+    <h2>display: none:</h2>
+    <p class="ex1">This text is hidden and will not appear on the page.</p>
+    <p>
+      <span
+        >Notice that nothing is shown above because the paragraph with class
+        "ex1" is set to display: none;</span
+      >
+    </p>
 
-<h2>display: inline:</h2>
-<p class="ex2">
-  <span>Text 1</span>
-  <span>Text 2</span>
-  <span>Text 3</span>
-</p>
+    <h2>display: inline:</h2>
+    <p class="ex2">
+      <span>Text 1</span>
+      <span>Text 2</span>
+      <span>Text 3</span>
+    </p>
+    <p class="ex2">
+      <span
+        >The inline display keeps elements on the same line like regular
+        text.</span
+      >
+    </p>
 
-<h2>display: block:</h2>
-<p class="ex3">
-  <span>Text 1</span>
-  <span>Text 2</span>
-  <span>Text 3</span>
-</p>
+    <h2>display: block:</h2>
+    <p class="ex3">
+      <span>Text 1</span>
+      <span>Text 2</span>
+      <span>Text 3</span>
+    </p>
+    <p class="ex3">
+      <span
+        >Block display makes elements take up the full width available, starting
+        on a new line.</span
+      >
+    </p>
 
-<h2>display: inline-block:</h2>
-<p class="ex4">
-  <span>Text 1</span>
-  <span>Text 2</span>
-  <span>Text 3</span>
-</p>
+    <h2>display: inline-block:</h2>
+    <p class="ex4">
+      <span>Text 1</span>
+      <span>Text 2</span>
+      <span>Text 3</span>
+    </p>
+    <p class="ex4">
+      <span
+        >Inline-block elements are like inline elements but respect width and
+        height properties.</span
+      >
+    </p>
 
-<h2>display: flex:</h2>
-<p class="ex5">
-  <span>Text 1</span>
-  <span>Text 2</span>
-  <span>Text 3</span>
-</p>
+    <h2>display: flex:</h2>
+    <p class="ex5">
+      <span>Text 1</span>
+      <span>Text 2</span>
+      <span>Text 3</span>
+    </p>
+    <p class="ex5">
+      <span
+        >Flex display arranges children in a flexible way, allowing alignment
+        and spacing control.</span
+      >
+    </p>
 
-<h2>display: grid:</h2>
-<p class="ex6">
-  <span>Text 1</span>
-  <span>Text 2</span>
-  <span>Text 3</span>
-</p>
-
-</body>
+    <h2>display: grid:</h2>
+    <p class="ex6">
+      <span>Text 1</span>
+      <span>Text 2</span>
+      <span>Text 3</span>
+    </p>
+    <p class="ex6">
+      <span
+        >Grid display places elements in a defined grid structure, providing
+        precise layout control.</span
+      >
+    </p>
+  </body>
 </html>
-
-
