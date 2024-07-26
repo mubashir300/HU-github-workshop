@@ -6,3 +6,5 @@ Get markdown help [here](https://www.markdownguide.org/cheat-sheet/).
 # Student Websites
 [Zain's Website](https://zainau.github.io)
 [adeeva's website] (https://adeeva2006.github.io)
+[Ali's Website](ali-boii.github.io)
+[Naqi's Website](naqi-boi.github.io)
