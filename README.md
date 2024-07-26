@@ -4,4 +4,5 @@ Repository to test, collaborate git/github features for HU GitxWebDev Workshop
 
 Get markdown help [here](https://www.markdownguide.org/cheat-sheet/).
 # Student Websites
-[Zain's Website](https://zainau.github.io)
+[Zain's Website](zainau.github.io)
+mubashir's website(https://mubashir300.github.io/)
